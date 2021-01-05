@@ -124,7 +124,7 @@ export const crossHeightX = (
   if (
     Platform.OS === "ios" &&
     !NativeModules.RNDeviceInfo.isTablet &&
-    !['X', 'iPhone 11'].some(model => NativeModules.RNDeviceInfo.model.includes(model))
+    !['X', 'iPhone 11', 'iPhone 12'].some(model => NativeModules.RNDeviceInfo.model.includes(model))
   ) {
     dimension = responsiveHeight(iosPhone)
   } else if (Platform.OS === "ios" && NativeModules.RNDeviceInfo.isTablet) {
@@ -136,7 +136,7 @@ export const crossHeightX = (
     dimension = responsiveHeight(androidPhone)
   } else if (Platform.OS === "android" && NativeModules.RNDeviceInfo.isTablet) {
     dimension = responsiveHeight(androidTablet)
-  } else if (['X', 'iPhone 11'].some(model => NativeModules.RNDeviceInfo.model.includes(model))) {
+  } else if (['X', 'iPhone 11', 'iPhone 12'].some(model => NativeModules.RNDeviceInfo.model.includes(model))) {
     dimension = responsiveHeight(iPhoneX)
   }
   return dimension
@@ -146,7 +146,7 @@ export const heightX = (height, iPhoneX) => {
   if (
     Platform.OS === "ios" &&
     !NativeModules.RNDeviceInfo.isTablet &&
-    !['X', 'iPhone 11'].some(model => NativeModules.RNDeviceInfo.model.includes(model))
+    !['X', 'iPhone 11', 'iPhone 12'].some(model => NativeModules.RNDeviceInfo.model.includes(model))
   ) {
     dimension = responsiveHeight(height)
   } else if (Platform.OS === "ios" && NativeModules.RNDeviceInfo.isTablet) {
@@ -158,7 +158,7 @@ export const heightX = (height, iPhoneX) => {
     dimension = responsiveHeight(height)
   } else if (Platform.OS === "android" && NativeModules.RNDeviceInfo.isTablet) {
     dimension = responsiveHeight(height)
-  } else if (['X', 'iPhone 11'].some(model => NativeModules.RNDeviceInfo.model.includes(model))) {
+  } else if (['X', 'iPhone 11', 'iPhone 12'].some(model => NativeModules.RNDeviceInfo.model.includes(model))) {
     dimension = responsiveHeight(iPhoneX)
   }
   return dimension
@@ -174,7 +174,7 @@ export const crossWidthX = (
   if (
     Platform.OS === "ios" &&
     !NativeModules.RNDeviceInfo.isTablet &&
-    !['X', 'iPhone 11'].some(model => NativeModules.RNDeviceInfo.model.includes(model))
+    !['X', 'iPhone 11', 'iPhone 12'].some(model => NativeModules.RNDeviceInfo.model.includes(model))
   ) {
     dimension = responsiveWidth(iosPhone)
   } else if (Platform.OS === "ios" && NativeModules.RNDeviceInfo.isTablet) {
@@ -186,7 +186,7 @@ export const crossWidthX = (
     dimension = responsiveWidth(androidPhone)
   } else if (Platform.OS === "android" && NativeModules.RNDeviceInfo.isTablet) {
     dimension = responsiveWidth(androidTablet)
-  } else if (['X', 'iPhone 11'].some(model => NativeModules.RNDeviceInfo.model.includes(model))) {
+  } else if (['X', 'iPhone 11', 'iPhone 12'].some(model => NativeModules.RNDeviceInfo.model.includes(model))) {
     dimension = responsiveWidth(iPhoneX)
   }
   return dimension
@@ -196,7 +196,7 @@ export const widthX = (width, iPhoneX) => {
   if (
     Platform.OS === "ios" &&
     !NativeModules.RNDeviceInfo.isTablet &&
-    !['X', 'iPhone 11'].some(model => NativeModules.RNDeviceInfo.model.includes(model))
+    !['X', 'iPhone 11', 'iPhone 12'].some(model => NativeModules.RNDeviceInfo.model.includes(model))
   ) {
     dimension = responsiveWidth(width)
   } else if (Platform.OS === "ios" && NativeModules.RNDeviceInfo.isTablet) {
@@ -208,7 +208,7 @@ export const widthX = (width, iPhoneX) => {
     dimension = responsiveWidth(width)
   } else if (Platform.OS === "android" && NativeModules.RNDeviceInfo.isTablet) {
     dimension = responsiveWidth(width)
-  } else if (['X', 'iPhone 11'].some(model => NativeModules.RNDeviceInfo.model.includes(model))) {
+  } else if (['X', 'iPhone 11', 'iPhone 12'].some(model => NativeModules.RNDeviceInfo.model.includes(model))) {
     dimension = responsiveWidth(iPhoneX)
   }
   return dimension
@@ -224,7 +224,7 @@ export const crossFontSizeX = (
   if (
     Platform.OS === "ios" &&
     !NativeModules.RNDeviceInfo.isTablet &&
-    !['X', 'iPhone 11'].some(model => NativeModules.RNDeviceInfo.model.includes(model))
+    !['X', 'iPhone 11', 'iPhone 12'].some(model => NativeModules.RNDeviceInfo.model.includes(model))
   ) {
     dimension = responsiveFontSize(iosPhone)
   } else if (Platform.OS === "ios" && NativeModules.RNDeviceInfo.isTablet) {
@@ -236,7 +236,7 @@ export const crossFontSizeX = (
     dimension = responsiveFontSize(androidPhone)
   } else if (Platform.OS === "android" && NativeModules.RNDeviceInfo.isTablet) {
     dimension = responsiveFontSize(androidTablet)
-  } else if (['X', 'iPhone 11'].some(model => NativeModules.RNDeviceInfo.model.includes(model))) {
+  } else if (['X', 'iPhone 11', 'iPhone 12'].some(model => NativeModules.RNDeviceInfo.model.includes(model))) {
     dimension = responsiveFontSize(iPhoneX ? iPhoneX : iosPhone)
   }
   return dimension
@@ -246,7 +246,7 @@ export const fontSizeX = (size, iPhoneX) => {
   if (
     Platform.OS === "ios" &&
     !NativeModules.RNDeviceInfo.isTablet &&
-    !['X', 'iPhone 11'].some(model => NativeModules.RNDeviceInfo.model.includes(model))
+    !['X', 'iPhone 11', 'iPhone 12'].some(model => NativeModules.RNDeviceInfo.model.includes(model))
   ) {
     dimension = responsiveFontSize(size)
   } else if (Platform.OS === "ios" && NativeModules.RNDeviceInfo.isTablet) {
@@ -258,7 +258,7 @@ export const fontSizeX = (size, iPhoneX) => {
     dimension = responsiveFontSize(size)
   } else if (Platform.OS === "android" && NativeModules.RNDeviceInfo.isTablet) {
     dimension = responsiveFontSize(size)
-  } else if (['X', 'iPhone 11'].some(model => NativeModules.RNDeviceInfo.model.includes(model))) {
+  } else if (['X', 'iPhone 11', 'iPhone 12'].some(model => NativeModules.RNDeviceInfo.model.includes(model))) {
     dimension = responsiveFontSize(iPhoneX ? iPhoneX : iosPhone)
   }
   return dimension
@@ -378,12 +378,12 @@ export const crossFontSizeXN8 = (
   if (
     Platform.OS === "ios" &&
     !NativeModules.RNDeviceInfo.isTablet &&
-    !['X', 'iPhone 11'].some(model => NativeModules.RNDeviceInfo.model.includes(model))
+    !['X', 'iPhone 11', 'iPhone 12'].some(model => NativeModules.RNDeviceInfo.model.includes(model))
   ) {
     dimension = responsiveFontSize(iosPhone)
   } else if (Platform.OS === "ios" && NativeModules.RNDeviceInfo.isTablet) {
     dimension = responsiveFontSize(iosTablet)
-  } else if (['X', 'iPhone 11'].some(model => NativeModules.RNDeviceInfo.model.includes(model))) {
+  } else if (['X', 'iPhone 11', 'iPhone 12'].some(model => NativeModules.RNDeviceInfo.model.includes(model))) {
     dimension = responsiveFontSize(iPhoneX ? iPhoneX : iosPhone)
   } else if (
     Platform.OS === "android" &&
@@ -410,12 +410,12 @@ export const crossHeightXN8 = (
   if (
     Platform.OS === "ios" &&
     !NativeModules.RNDeviceInfo.isTablet &&
-    !['X', 'iPhone 11'].some(model => NativeModules.RNDeviceInfo.model.includes(model))
+    !['X', 'iPhone 11', 'iPhone 12'].some(model => NativeModules.RNDeviceInfo.model.includes(model))
   ) {
     dimension = responsiveHeight(iosPhone)
   } else if (Platform.OS === "ios" && NativeModules.RNDeviceInfo.isTablet) {
     dimension = responsiveHeight(iosTablet)
-  } else if (['X', 'iPhone 11'].some(model => NativeModules.RNDeviceInfo.model.includes(model))) {
+  } else if (['X', 'iPhone 11', 'iPhone 12'].some(model => NativeModules.RNDeviceInfo.model.includes(model))) {
     dimension = responsiveHeight(iPhoneX ? iPhoneX : iosPhone)
   } else if (
     Platform.OS === "android" &&
@@ -442,12 +442,12 @@ export const crossWidthXN8 = (
   if (
     Platform.OS === "ios" &&
     !NativeModules.RNDeviceInfo.isTablet &&
-    !['X', 'iPhone 11'].some(model => NativeModules.RNDeviceInfo.model.includes(model))
+    !['X', 'iPhone 11', 'iPhone 12'].some(model => NativeModules.RNDeviceInfo.model.includes(model))
   ) {
     dimension = responsiveWidth(iosPhone)
   } else if (Platform.OS === "ios" && NativeModules.RNDeviceInfo.isTablet) {
     dimension = responsiveWidth(iosTablet)
-  } else if (['X', 'iPhone 11'].some(model => NativeModules.RNDeviceInfo.model.includes(model))) {
+  } else if (['X', 'iPhone 11', 'iPhone 12'].some(model => NativeModules.RNDeviceInfo.model.includes(model))) {
     dimension = responsiveWidth(iPhoneX ? iPhoneX : iosPhone)
   } else if (
     Platform.OS === "android" &&
@@ -464,7 +464,7 @@ export const crossWidthXN8 = (
 }
 
 export const fontSizeXN8 = (size, iPhoneX, note8) => {
-  if (['X', 'iPhone 11'].some(model => NativeModules.RNDeviceInfo.model.includes(model))) {
+  if (['X', 'iPhone 11', 'iPhone 12'].some(model => NativeModules.RNDeviceInfo.model.includes(model))) {
     dimension = responsiveFontSize(iPhoneX ? iPhoneX : iosPhone)
   } else if (NativeModules.RNDeviceInfo.model === "SM-N950U") {
     dimension = responsiveFontSize(note8)
@@ -475,7 +475,7 @@ export const fontSizeXN8 = (size, iPhoneX, note8) => {
 }
 
 export const widthXN8 = (size, iPhoneX, note8) => {
-  if (['X', 'iPhone 11'].some(model => NativeModules.RNDeviceInfo.model.includes(model))) {
+  if (['X', 'iPhone 11', 'iPhone 12'].some(model => NativeModules.RNDeviceInfo.model.includes(model))) {
     dimension = responsiveWidth(iPhoneX)
   } else if (NativeModules.RNDeviceInfo.model === "SM-N950U") {
     dimension = responsiveWidth(note8)
@@ -485,7 +485,7 @@ export const widthXN8 = (size, iPhoneX, note8) => {
   return dimension
 }
 export const heightXN8 = (size, iPhoneX, note8) => {
-  if (['X', 'iPhone 11'].some(model => NativeModules.RNDeviceInfo.model.includes(model))) {
+  if (['X', 'iPhone 11', 'iPhone 12'].some(model => NativeModules.RNDeviceInfo.model.includes(model))) {
     dimension = responsiveHeight(iPhoneX)
   } else if (NativeModules.RNDeviceInfo.model === "SM-N950U") {
     dimension = responsiveHeight(note8)
